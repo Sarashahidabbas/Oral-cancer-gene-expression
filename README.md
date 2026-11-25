@@ -33,14 +33,13 @@ Which genes differ between metastases and primary tumors in the same patient?
 
 ### Sample overview
 
-![PCA of all samples](results/pca_all_samples.png)
 
+![PCA of all samples](pca_all_samples.png)
 Metastases (red) sit toward the left of PC1. Several primary tumors overlap with them.
 
 ### Differential expression, metastasis versus primary
 
-![Volcano plot](results/volcano_metastasis_vs_primary.png)
-
+![Volcano plot](volcano_metastasis_vs_primary.png) 
 The paired test finds 1,384 significant genes. Of these, 862 are higher in metastases and 522 are lower.
 
 | Gene | log2 fold change | Adjusted p |
@@ -58,8 +57,10 @@ The paired test finds 1,384 significant genes. Of these, 862 are higher in metas
 
 ### Top 30 genes
 
-![Heatmap of top 30 genes](results/heatmap_top30.png)
 
+
+
+ ![Heatmap of top 30 genes](heatmap_top30.png) 
 Each column is one sample from the 11 paired patients. Values are z-scored per gene.
 
 ## Limitations
