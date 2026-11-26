@@ -4,7 +4,8 @@
 
 **Background:** Cervical lymph node metastasis strongly predicts poor outcomes in oral squamous cell carcinoma (OSCC). Transcriptional comparisons between primary tumors and matched metastases help uncover mechanisms of spread and candidate markers while controlling for inter-patient variation.
 
-**Methods:** Public bulk RNA-seq data from GEO series [GSE275870](https://nih.gov) (PubMed ID 39778089) provided 108 tumor samples from 72 patients, yielding 16,044 protein-coding genes after filtering, with paired differential expression evaluated via PyDESeq2 across 11 patients.
+**Methods:** Public bulk RNA-seq data from GEO series [GSE275870](https://nih.gov) (PubMed ID 39778089) provided 72 patients, 108 total samples, 87 primary tumors, 21 lymph node metastases, 11 paired patients,
+yielding 16,044 protein-coding genes after filtering, with paired differential expression evaluated via PyDESeq2 across 11 patients.
 
 **Results:** Paired analysis identified 1,384 significant genes (862 upregulated and 522 downregulated in metastases, including top shifts in *C7*, *IL33*, *ADH1B*, *TIMD4*, and *IL24*).
 
