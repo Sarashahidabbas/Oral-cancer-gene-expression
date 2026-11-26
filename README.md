@@ -1,5 +1,16 @@
-# Bioinformatics Analysis of Gene Expression and Molecular Biomarkers in Oral Cancer
+# Paired Differential Gene Expression Analysis of Primary Oral Squamous Cell Carcinoma and Matched Lymph Node Metastases
 
+## Abstract
+
+**Background:** Cervical lymph node metastasis strongly predicts poor outcomes in oral squamous cell carcinoma (OSCC). Transcriptional comparisons between primary tumors and matched metastases help uncover mechanisms of spread and candidate markers while controlling for inter-patient variation.
+
+**Methods:** Public bulk RNA-seq data from GEO series [GSE275870](https://nih.gov) (PubMed ID 39778089) provided 108 tumor samples from 72 patients, yielding 16,044 protein-coding genes after filtering, with paired differential expression evaluated via PyDESeq2 across 11 patients.
+
+**Results:** Paired analysis identified 1,384 significant genes (862 upregulated and 522 downregulated in metastases, including top shifts in *C7*, *IL33*, *ADH1B*, *TIMD4*, and *IL24*).
+
+**Conclusions:** Paired analysis isolates metastasis-associated transcripts while capturing local microenvironmental influences.
+
+## Objective of study
 This project compares gene expression in primary oral squamous cell carcinoma (OSCC) tumors and matched lymph node metastases. It uses public RNA-seq data and Python.
 
 ## Data
@@ -87,7 +98,12 @@ mkdir data
 python 01_qc_and_paired_de.py
 ```
 
-Outputs go to `results/`.
+##  Results
+
+###  Global Structure and Paired Expression
+
+PC1 accounted for 16.9% of variance and PC2 accounted for 9.7%. Paired testing revealed 1,384 significant transcripts (862 upregulated, 522 downregulated in metastases). Top candidate genes include upregulated markers such as *C7*, *IL33*, *ADH1B*, *TIMD4*, *ADGRG2*, *FDCSP*, *PLA2G2D*, *GALNT16*, and *PDK4*, alongside downregulated *IL24*.
+
 
 ## Repository layout
 
@@ -97,7 +113,16 @@ results/     figures and the full differential expression table
 01_qc_and_paired_de.py
 README.md
 ```
+##  Future Directions
 
-## Licence
+Future extensions include microenvironment deconvolution (`xCell`, `ESTIMATE`), GO/KEGG pathway enrichment (`gseapy`), `STRING` network analysis, and validation in `TCGA-HNSC` cohorts.
 
-MIT
+---
+
+
+##  Data Citation and License
+
+* **Source Dataset:** NCBI GEO accession [GSE275870](https://nih.gov) (PubMed ID: `39778089`).
+* **License:** Released under the **MIT License** (`LICENSE`).
+
+
